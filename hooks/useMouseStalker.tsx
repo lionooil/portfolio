@@ -1,6 +1,5 @@
-'use client';
 import { useSpring } from 'react-spring';
-import { Mouse, useMouseMove } from '@/..//hooks/mouseEvent';
+import { Mouse, useMouseMove } from '@/../hooks/mouseEvent';
 
 export type SpringConfig = {
   frequency: number;
