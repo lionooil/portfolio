@@ -32,9 +32,9 @@ function App() {
 
   return (
     <div className="App">
-      <Pointer name="pointer is-small" position={mousePosition} />
+      <Pointer name="pointer small" position={mousePosition} />
       <Pointer name="pointer" position={mousePosition} />
-      <Pointer name="pointer is-large" position={mousePosition} />
+      <Pointer name="pointer large" position={mousePosition} />
     </div>
   );
 }
