@@ -6,6 +6,9 @@ import type { AppProps } from 'next/app';
 import { FC } from 'react';
 import MouseStalker from '@/../components/MouseStalker';
 
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from '@/../js/App.jsx'
 
 export default async function StaticPage() {
     const { contents }  = await getBlogs();
@@ -16,6 +19,9 @@ export default async function StaticPage() {
 
     return (
       <>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>,
       <h2 className="text-4xl font-bold mb-4 mt-8 text-center">WELCOME TO LIOSS PORTFOLIO!!</h2>
       <Image
         src="/header-icon.svg"
@@ -29,7 +35,6 @@ export default async function StaticPage() {
         priority
       />
       <div className="h-screen container mx-auto mt-10">
-       <MouseStalker />
             <ul className="space-y-10">
                 {contents.map((blog) => (
                  <li key={blog.id} className="p-5 rounded shadow-lg content flex justify-between items-center">
