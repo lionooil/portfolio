@@ -2,6 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { getBlogs } from "@/../libs/client";
 
+import type { AppProps } from 'next/app';
+import { FC } from 'react';
+import MouseStalker from '@/../components/MouseStalker';
+
+
 export default async function StaticPage() {
     const { contents }  = await getBlogs();
 
@@ -14,16 +19,17 @@ export default async function StaticPage() {
       <h2 className="text-4xl font-bold mb-4 mt-8 text-center">WELCOME TO LIOSS PORTFOLIO!!</h2>
       <Image
         src="/header-icon.svg"
-        alt="Vercel Logo"
+        alt="Header icon"
         className="dark:invert"
         width={500}
         height={24}
         style={{
-  margin: "auto",
+  margin: "auto", padding: "0px 8px"
 }}
         priority
       />
       <div className="h-screen container mx-auto mt-10">
+       <MouseStalker />
             <ul className="space-y-10">
                 {contents.map((blog) => (
                  <li key={blog.id} className="p-5 rounded shadow-lg content flex justify-between items-center">
