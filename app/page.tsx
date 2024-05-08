@@ -21,38 +21,46 @@ export default async function StaticPage() {
       <>
       <React.StrictMode>
         <App />
-      </React.StrictMode>,
-      <h2 className="text-4xl font-bold mb-4 mt-8 text-center">WELCOME TO LIOSS PORTFOLIO!!</h2>
+      </React.StrictMode>
+      <div className="h-screen mx-auto flex flex-col">
+      <h1 className="text-4xl mb-4 mt-8 text-center font-impact">WELCOME TO LIOS&#39;s PORTFOLIO!!</h1>
       <Image
-        src="/header-icon.svg"
+        src="/icons/header-icon-trans-tech.svg"
         alt="Header icon"
         className="dark:invert"
         width={500}
         height={24}
         style={{
-  margin: "auto", padding: "0px 8px"
+  margin: "8px auto", padding: "0px 8px"
 }}
         priority
       />
-      <div className="h-screen container mx-auto mt-10">
-            <ul className="space-y-10">
-                {contents.map((blog) => (
-                 <li key={blog.id} className="p-5 rounded shadow-lg content flex justify-between items-center">
-                    <h4>
-                        {blog.title}
-                    </h4>
-                    <Link href={`/${blog.id}`}>
-                        <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition">
-                            詳細
-                        </button>
-                    </Link>
-                  </li>
-                ))}
-            </ul>
+      <Image
+        src="/icons/header-icon-trans-global.svg"
+        alt="Header icon"
+        className="dark:invert"
+        width={500}
+        height={24}
+        style={{
+  margin: "8px auto", padding: "0px 8px"
+}}
+        priority
+      />
+      <h2 className="text-4xl text-center mt-20 font-impact">LINKS</h2>
+      <Image
+        src="/icons/arrow-purple-icon.svg"
+        alt="Header icon"
+        className="dark:invert animate-bounce"
+        width={100}
+        height={24}
+        style={{
+          margin: "auto auto 16px auto", padding: "0px 8px"
+}}
+        priority
+      />
         </div>
-        <div className="h-screen container mx-auto mt-10">
-        <h2>LINKS</h2>
-
+        <div className="h-screen mx-auto bg-indigo-500">
+        <h2 className="text-4xl text-center font-impact pt-16">WORKS</h2>
 </div>
       </>
     );
