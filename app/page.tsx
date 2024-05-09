@@ -4,15 +4,18 @@ import { getBlogs } from "@/../libs/client";
 
 import type { AppProps } from 'next/app';
 import { FC } from 'react';
-import MouseStalker from '@/../components/MouseStalker';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from '@/../js/App.jsx';
 
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from '@/../js/App.jsx'
+import MouseStalker from '@/../components/MouseStalker';
+import FramerMotionTest from '@/../components/FramerMotionTest';
+import ProgressBar from '@/../components/ProgressBar';
+
+
 
 export default async function StaticPage() {
     const { contents }  = await getBlogs();
-
     if (!contents) {
       return <h1 className="text-2xl font-bold text-center mt-20">No Contents</h1>;
     }
@@ -21,10 +24,11 @@ export default async function StaticPage() {
       <>
       <React.StrictMode>
         <App />
-      </React.StrictMode>
+        </React.StrictMode>
       <div className="h-screen mx-auto flex flex-col">
       <h1 className="text-4xl mb-4 mt-8 text-center font-impact">WELCOME TO LIOS&#39;s PORTFOLIO!!</h1>
-      <Image
+      <ProgressBar />
+ <Image
         src="/icons/header-icon-trans-tech.svg"
         alt="Header icon"
         className="dark:invert fadeUp-0"
@@ -84,6 +88,41 @@ export default async function StaticPage() {
         </div>
         <div className="h-screen mx-auto bg-indigo-500">
         <h2 className="text-4xl text-center font-impact pt-16">WORKS</h2>
+        <div className="flex my-8 fadeUp-0">
+        <Image
+          src="/thumbnail/tech.jpg"
+          alt="Header icon"
+          className="dark:invert"
+          width={300}
+          height={24}
+          style={{
+            margin: "auto", padding: "0px 8px"
+  }}
+          priority
+        />
+        <Image
+          src="/thumbnail/canada.jpg"
+          alt="Header icon"
+          className="dark:invert"
+          width={300}
+          height={24}
+          style={{
+            margin: "auto", padding: "0px 8px"
+  }}
+          priority
+        />
+        <Image
+          src="/thumbnail/portfolio.jpg"
+          alt="Header icon"
+          className="dark:invert"
+          width={300}
+          height={24}
+          style={{
+            margin: "auto", padding: "0px 8px"
+  }}
+          priority
+        /></div>
+        <FramerMotionTest />
 </div>
       </>
     );
