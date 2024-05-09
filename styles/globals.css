@@ -62,3 +62,39 @@ body {
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .content p {
   color: rgb(var(--foreground-rgb));
 }
+
+.fadeUp-0{
+animation-name:fadeUpAnime;
+animation-duration:1s;
+animation-delay:0s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+.fadeUp-05{
+animation-name:fadeUpAnime;
+animation-duration:1s;
+animation-delay: 0.5s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+.fadeUp-1{
+animation-name:fadeUpAnime;
+animation-duration:1s;
+animation-delay: 1s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+  transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}

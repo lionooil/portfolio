@@ -27,7 +27,7 @@ export default async function StaticPage() {
       <Image
         src="/icons/header-icon-trans-tech.svg"
         alt="Header icon"
-        className="dark:invert"
+        className="dark:invert fadeUp-0"
         width={500}
         height={24}
         style={{
@@ -38,7 +38,7 @@ export default async function StaticPage() {
       <Image
         src="/icons/header-icon-trans-global.svg"
         alt="Header icon"
-        className="dark:invert"
+        className="dark:invert fadeUp-05"
         width={500}
         height={24}
         style={{
@@ -46,7 +46,30 @@ export default async function StaticPage() {
 }}
         priority
       />
-      <h2 className="text-4xl text-center mt-20 font-impact">LINKS</h2>
+      <div className="flex">
+      <Image
+        src="/icons/icon-trans-tech.svg"
+        alt="Header icon"
+        className="dark:invert fadeUp-1"
+        width={160}
+        height={160}
+        style={{
+  margin: "8px auto", padding: "0px 8px"
+}}
+        priority
+      />
+      <Image
+        src="/icons/icon-trans-global.svg"
+        alt="Header icon"
+        className="dark:invert fadeUp-1"
+        width={160}
+        height={160}
+        style={{
+  margin: "8px auto", padding: "0px 8px"
+}}
+        priority
+      /></div>
+
       <Image
         src="/icons/arrow-purple-icon.svg"
         alt="Header icon"
