@@ -20,8 +20,8 @@ const ProfilePicture = () => {
       />
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }}  transition={{ duration: 0.4, delay: 0.3 }} viewport={{ once: true }} className="m-auto">
-      <p>Lios - 竹下　凌/Takeshita Ryo</p>
+      <motion.div initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }}  transition={{ duration: 0.4, delay: 0.3 }} viewport={{ once: true }} className="m-auto bg-white shadow p-8 rounded-md bg-opacity-50">
+      <p className="font-bold">Lios - 竹下　凌/Takeshita Ryo</p>
       <p>1996年生まれ。かに座。</p>
       <p>情報工学科卒業（学士）/ Bachelor of Engneering - Information Technology</p>
       <p>日本でサーバー、システム監視・運用、サーバー増設支援業務に2年間携わる。</p>

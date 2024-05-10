@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html,a{
+  cursor: none;
+}
+
 :root {
   --foreground-rgb: 28, 28, 28;
   --background-start-rgb: 245, 245, 245;
@@ -17,7 +21,7 @@
 }
 
 body {
-  cursor:none;
+  cursor: none;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,

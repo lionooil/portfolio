@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
+    "@studio-freight/tempus": "^0.0.44",
     "@types/react-scramble": "^0.4.5",
     "clsx": "^2.1.1",
     "framer-motion": "^11.1.9",
