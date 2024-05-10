@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from "react";
-import "@/../styles/App.css";
+import "@/../styles/MouseStalker.css";
 
 const Pointer = ({ name, position }) => (
   <div
@@ -12,7 +12,7 @@ const Pointer = ({ name, position }) => (
 );
 
 
-function App() {
+function MouseStalker() {
   // マウスの座標
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -31,7 +31,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="MouseStalker">
       <Pointer name="pointer small" position={mousePosition} />
       <Pointer name="pointer" position={mousePosition} />
       <Pointer name="pointer large" position={mousePosition} />
@@ -39,4 +39,4 @@ function App() {
   );
 }
 
-export default App;
+export default MouseStalker;

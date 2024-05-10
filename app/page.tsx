@@ -6,7 +6,7 @@ import type { AppProps } from 'next/app';
 import { FC } from 'react';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from '@/../js/App.jsx';
+import App from '@/../js/MouseStalker.jsx';
 
 import Top from '@/../components/Top';
 import MouseStalker from '@/../components/MouseStalker';
