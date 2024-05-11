@@ -4,7 +4,7 @@ import React from 'react'
 import Wave from 'react-wavify'
 
 const Wavify = () => (
-  <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}  transition={{ duration: 1, delay: 0.5 }} viewport={{ once: true }}>
+  <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}  transition={{ duration: 1, delay: 0 }} viewport={{ once: true }}>
   <Wave fill="url(#gradient)" style={{ display: 'flex', transition: '0.5s'}} options={{ height: 20, amplitude: 30, speed: 0.15, points: 3 }}>
     <defs>
       <linearGradient id="gradient" gradientTransform="rotate(90)">

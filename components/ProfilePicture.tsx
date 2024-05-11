@@ -6,7 +6,7 @@ const ProfilePicture = () => {
   return (
     　<div className="flex-col my-auto">
       <div className="flex">
-      <motion.div initial={{ x: 0, y: -200, scale: 0 }} whileInView={{ x: 0, y: 0, scale: 1 }} transition={{ duration: 0.6, delay: 0.6, type: 'spring', bounce: 0.8 }} viewport={{ once: true }} className="m-auto">
+      <motion.div initial={{ x: 0, y: -200, scale: 0 }} whileInView={{ x: 0, y: 0, scale: 1 }} transition={{ duration: 0.6, delay: 1, type: 'spring', bounce: 0.8 }} viewport={{ once: true }} className="m-auto">
       <Image
         src="/thumbnail/profile-icon.jpg"
         alt="Header icon"
@@ -20,7 +20,7 @@ const ProfilePicture = () => {
       />
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }}  transition={{ duration: 0.4, delay: 0.3 }} viewport={{ once: true }} className="m-auto bg-white shadow p-8 rounded-md bg-opacity-50">
+      <motion.div initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }}  transition={{ duration: 0.4, delay: 1 }} viewport={{ once: true }} className="m-auto bg-white shadow p-8 rounded-md bg-opacity-50 text-xl">
       <p className="font-bold">Lios - 竹下　凌/Takeshita Ryo</p>
       <p>1996年生まれ。かに座。</p>
       <p>情報工学科卒業（学士）/ Bachelor of Engneering - Information Technology</p>

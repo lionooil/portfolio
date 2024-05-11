@@ -17,7 +17,7 @@ export default function FadeinTextRight() {
         )  })
 
   return (
-    <div className='fadeintextright flex justify-center mt-auto mb-16'>
+    <div className='fadeintextright flex justify-center mt-auto mb-16 tracking-wide text-5xl'>
         {textanimate}
     </div>
   )
