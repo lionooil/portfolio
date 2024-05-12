@@ -7,22 +7,12 @@ import FooterLinks from '@/../components/FooterLinks';
 const navigation = [
   {
     name: "Facebook",
-    href: "https://www.facebook.com/sitecore",
+    href: "https://www.facebook.com/profile.php?id=100070059756608",
     icon: BsFacebook,
   },
   {
-    name: "X",
-    href: "https://twitter.com/sitecore",
-    icon: FaXTwitter,
-  },
-  {
-    name: "Instagram",
-    href: "https://www.instagram.com/sitecore/",
-    icon: BsInstagram,
-  },
-  {
     name: "GitHub",
-    href: "https://github.com/haramizu/demo.haramizu.com",
+    href: "https://github.com/lionooil",
     icon: BsGithub,
   },
 ];

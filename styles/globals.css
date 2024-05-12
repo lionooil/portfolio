@@ -59,3 +59,25 @@ body {
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .content p {
   color: rgb(var(--foreground-rgb));
 }
+
+.underline-motion{
+	position: relative;
+	text-decoration: none;
+	transition: 0.3s;
+}
+.underline-motion:hover{
+	color: #333333;
+}
+.underline-motion::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+	width: 0;
+	height: 1px;
+	background: #333333;
+	transition: 0.3s;
+}
+.underline-motion:hover::before{
+	width: 100%;
+}
