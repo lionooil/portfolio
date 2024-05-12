@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/../styles/globals.css";
 import { motion } from "framer-motion"
+import { GoogleAnalytics } from "@next/third-parties/google"; // インポート
 import SmoothScroller from "@/../components/Lenis"; // Adjust the import path as needed
+import GoogleAdsense from "@/../components/GoogleAdsense";
 import { Suspense } from 'react'
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,6 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>{children}
+      <GoogleAnalytics gaId={process.env.GA_ID ?? ""} />
+      <GoogleAdsense pId="2472739393063959" />
       <Suspense>
       <SmoothScroller />
        </Suspense>
