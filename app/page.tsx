@@ -11,9 +11,8 @@ import App from '@/../js/MouseStalker.jsx';
 import Top from '@/../components/Top';
 import MouseStalker from '@/../components/MouseStalker';
 import WorksMotionF from '@/../components/WorksMotionF';
-import WorksMotionS from '@/../components/WorksMotionS';
-
 import ProfilePicture from '@/../components/ProfilePicture';
+import Footer from "@/../components/footer";
 
 export default async function StaticPage() {
     const { contents }  = await getBlogs();
@@ -28,6 +27,7 @@ export default async function StaticPage() {
         <Top />
         <ProfilePicture />
         <WorksMotionF />
+        <Footer />
       </>
     );
   }

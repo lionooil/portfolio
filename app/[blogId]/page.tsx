@@ -1,4 +1,8 @@
 import { getDetail,getBlogs } from "@/../libs/client";
+
+import Footer from "@/../components/footer";
+import "@/../styles/PrivacyPolicy.css";
+
 export async function generateStaticParams(){
   const { contents } = await getBlogs();
 
@@ -19,16 +23,16 @@ export default async function StaticDetailPage({
 
   return(
     <>
-      <div className="h-screen pt-5">
-        <div className="content">
-          <h1>{blog.title}</h1>
+      <div className="min-h-screen content">
+          <h1 className="text-4xl font-bold mb-4 mt-8 text-center">{blog.title}</h1>
           <div
+            className ="xl:w-8/12 w-11/12 mx-auto my-32"
             dangerouslySetInnerHTML={{
               __html: `${blog.body}`,
             }}
           />
-        </div>
       </div>
+      <Footer />
     </>
   )
 }

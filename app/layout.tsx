@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "@/../styles/globals.css";
 import { motion } from "framer-motion"
 import SmoothScroller from "@/../components/Lenis"; // Adjust the import path as needed
-import Footer from "./footer";
 import { Suspense } from 'react'
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,7 +23,6 @@ export default function RootLayout({
       <Suspense>
       <SmoothScroller />
        </Suspense>
-　　　　<Footer />
       </body>
     </html>
   );
