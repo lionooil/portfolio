@@ -1,4 +1,5 @@
 .fadeintextright{
   font-weight: bold!important;
   font-family: monospace;
+  font-size: max(2.5vw, 14px);
 }

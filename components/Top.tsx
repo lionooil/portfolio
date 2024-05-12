@@ -14,8 +14,8 @@ const Top = () => {
   return (
 <div className="h-screen mx-auto flex flex-col">
 <canvas id="canvas-bubble" className="absolute size-full"></canvas>
-<canvas id = "canvas-mouse-sparkle" className="absolute"></canvas>
-<motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}  transition={{ duration: 1, delay: 1 }} viewport={{ once: true }}  className="inset-0 m-auto text-8xl text-center font-impact z-10">
+<canvas id = "canvas-mouse-sparkle" className="absolute size-full"></canvas>
+<motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}  transition={{ duration: 1, delay: 1 }} viewport={{ once: true }}  className="inset-0 m-auto text-6xl md:text-8xl text-center font-impact z-10">
 <h1>WELCOME TO LIOS&#39;s PORTFOLIO!!</h1>
 </motion.div>
 <ProgressBar />

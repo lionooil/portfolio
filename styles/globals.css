@@ -66,3 +66,14 @@ body {
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .content p {
   color: rgb(var(--foreground-rgb));
 }
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.grid-item {
+  width: fit-content;
+  border-radius: 10px;
+  text-align: center;
+}
