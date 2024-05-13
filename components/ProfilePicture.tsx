@@ -10,7 +10,7 @@ const ProfilePicture = () => {
       <div className="flex flex-wrap mx-auto w-11/12 gap-4 my-8">
       <motion.div initial={{ x: 0, y: -200, scale: 0 }} whileInView={{ x: 0, y: 0, scale: 1 }} transition={{ duration: 0.6, delay: 1, type: 'spring', bounce: 0.8 }} viewport={{ once: true }} className="my-auto mx-auto">
       <Image
-        src="/thumbnail/profile-icon.jpg"
+        src="/thumbnail/profile-icon.png"
         alt="Header icon"
         className="rounded-full mx-auto"
         width={400}
